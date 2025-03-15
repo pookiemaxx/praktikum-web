@@ -1,4 +1,4 @@
-let randomNumber = Math.floor(Math.random() * 10) + 1;
+let randomNumber = Math.floor(Math.random() * 100) + 1;
 let attempts = 0;
 
 function checkGuess() {
@@ -25,7 +25,7 @@ function checkGuess() {
 }
 
 function resetGame() {
-    randomNumber = Math.floor(Math.random() * 10) + 1;
+    randomNumber = Math.floor(Math.random() * 100) + 1;
     attempts = 0;
     document.getElementById("message").innerHTML = "";
     document.getElementById("guessInput").value = "";
