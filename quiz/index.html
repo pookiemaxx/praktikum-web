@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Interaktif</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container d-flex flex-column align-items-center justify-content-center vh-100">
+        <!-- Halaman Selamat Datang -->
+        <div id="welcome-screen" class="text-center">
+            <h1 class="mb-4">Sigma Quizzrizz</h1>
+            <p class="fs-5">Are u really sigma?</p>
+            <button class="btn btn-primary mt-3" onclick="startQuiz()">START!</button>
+        </div>
+
+        <!-- Halaman Kuis -->
+        <div id="quiz-box" class="quiz-box p-4 shadow-lg rounded text-center d-none">
+            <h2 class="mb-3">SIGMA</h2>
+            <div class="progress mb-3">
+                <div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated bg-primary" 
+                     role="progressbar" style="width: 0%"></div>
+            </div>
+            <p id="progress-text" class="fw-bold">Soal ke 1 dari 5</p>
+            <p id="question" class="fs-4 fw-bold"></p>
+            <div id="options" class="btn-group-vertical w-100"></div>
+            <p id="feedback" class="feedback"></p>
+            <button id="next-btn" class="btn btn-primary mt-3 d-none" onclick="nextQuestion()">Soal Berikutnya ➡</button>
+        </div>
+
+        <!-- Halaman Hasil -->
+        <div id="result-screen" class="quiz-box p-4 shadow-lg rounded text-center d-none">
+            <h2 class="mb-3">tspmo fr🥀</h2>
+            <p id="score-text" class="fs-4 fw-bold"></p>
+            <p id="message-text" class="fs-5"></p>
+            <button class="btn btn-success mt-3" onclick="restartQuiz()">🔄 Retry</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(to right, #86b0ff, #002b76);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.quiz-box {
+    background: #f0f8ff;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    color: black;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 10px;
+    background: #d6e4ff;
+}
+
+.progress-bar {
+    transition: width 0.4s ease-in-out;
+}
+
+button {
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.feedback {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-outline-dark {
+    background: white;
+    border: 2px solid #2a5298;
+    color: #2a5298;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+    background: #0136b0;
+    color: white;
+}
+
+.btn-primary {
+    background: #0136b0;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #0136b0;
+}
+
+.btn-success {
+    background: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background: #218838;
+}
+
+.d-none {
+    display: none !important;
+}
